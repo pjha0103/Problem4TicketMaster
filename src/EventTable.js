@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import ReactTable from 'react-table';
 import { connect } from 'react-redux';
-import _ from 'lodash';
 import './styles/react-table.css';
 import './Form.css';
 
@@ -97,7 +96,7 @@ class EventTable extends Component {
     );
   }
   noTableData() {
-    if (!this.state.firstLoad && _.isEmpty(this.props.fetchedEventsResult)) {
+    if (!this.state.firstLoad && (this.props.fetchedEventsResult.length===0 || !this.props.fetchedEventsResult)) {
       return (<span>We're sorry.We were not able to find a match! </span>);
     }
     return '';
@@ -106,7 +105,7 @@ class EventTable extends Component {
   table() {
     return (
       <div className="NoResult">
-        {_.isEmpty(this.props.fetchedEventsResult) ? this.noTableData() : this.tableContent()}
+        {(this.props.fetchedEventsResult.length===0 || !this.props.fetchedEventsResult) ? this.noTableData() : this.tableContent()}
       </div>
     );
   }

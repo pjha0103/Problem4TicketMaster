@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Row, Form, Label, Input } from 'reactstrap';
-import _ from 'lodash';
 import { connect } from 'react-redux';
 import { searchApplicant } from './action/Form_action';
 import './Form.css';
@@ -37,7 +36,7 @@ class postalCodeForm extends Component {
   }
 
   clickSearchResult() {
-    if (_.isEmpty(this.state.postalCode)) {
+    if (!this.state.postalCode) {
       this.setState(
         {
           error: true,
