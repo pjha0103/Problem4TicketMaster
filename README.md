@@ -20,8 +20,8 @@ visit http://localhost:3005
 This is an event search page,which allows to search events and their gelocation based on user entered postal code.
 Steps to get gelocation:
 1)Go to http://localhost:3005
-2)Enter any postal code like 10000, 10001,20000 in the input box,this field in a mandatory field,hence will show an error if we try to perform 
-search without filling it.
+2)Enter any postal code like 10000, 10001,20000 in the input box,this field in a mandatory field,
+hence will show an error if we try to perform search without filling it.
 3)If search resilts found for enetred postal code,It will show a table with events and its geo location details.
    3.1 Table has sorting feature,user can sort data for all the columns, 
    3.2 It has pagination implemented as well, by default it shows first 10 results.
