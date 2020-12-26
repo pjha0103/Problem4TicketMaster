@@ -13,7 +13,21 @@ visit http://localhost:3005
 
 
  <ins> NOTE :API Key Validity till : 26th December 17:00 Hours IST . Post That API will fail. You would need to again generate the key and pass it to API to make it run.</ins>
+
 ####Please note that the Ticket master API can be used for upto 5000 hits. #####
+
+```
+This is an event search page,which allows to search events and their gelocation based on user entered postal code.
+Steps to get gelocation:
+1)Go to http://localhost:3005
+2)Enter any postal code like 10000, 10001,20000 in the input box,this field in a mandatory field,hence will show an error if we try to perform 
+search without filling it.
+3)It will show a table with events and its geo location details.
+   3.1 Table has sorting feature,user can sort data for all the columns, 
+   3.2 It has pagination implemented as well, by default it shows first 10 results.
+4)We are storing last 5 searches in an array and logging it in console.
+```
+
 
 ***Lighthouse Report***
 
