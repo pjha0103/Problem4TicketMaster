@@ -1,0 +1,21 @@
+.postalCodeField{
+    padding-top:10px;
+    padding-left:40px !important;
+    font-family: Times New Roman;
+}
+.searchBtn{
+    margin-left:20px !important;
+    font-family: Times New Roman;
+}
+.astrics{
+    color:red;
+    font-size:14px;
+    font-weight:500;
+    height:16px;
+    width:7px;
+}
+.NoResult{
+    margin-top:20px;
+    padding-left:20px;
+    font-family: Times New Roman;
+}
