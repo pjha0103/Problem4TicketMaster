@@ -22,10 +22,12 @@ Steps to get gelocation:
 1)Go to http://localhost:3005
 2)Enter any postal code like 10000, 10001,20000 in the input box,this field in a mandatory field,hence will show an error if we try to perform 
 search without filling it.
-3)It will show a table with events and its geo location details.
+3)If search resilts found for enetred postal code,It will show a table with events and its geo location details.
    3.1 Table has sorting feature,user can sort data for all the columns, 
    3.2 It has pagination implemented as well, by default it shows first 10 results.
-4)We are storing last 5 searches in an array and logging it in console.
+4)If there are no show results,it returns a msg "No search results found for entered postal code"   
+4)We are storing last 5 searches in an array and logging it in console to monitor it.
+(Snippet of the same is available under ***Last 5 search Monitor console*** section)
 ```
 
 
