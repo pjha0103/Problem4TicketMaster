@@ -12,8 +12,8 @@ visit http://localhost:3005
 ```
 
 
-API Key Validity till : 26th December 17:00 Hours IST . Post That API will fail.
-Please note that the Ticket master API can be used for upto 5000 hits.
+ <ins> NOTE :API Key Validity till : 26th December 17:00 Hours IST . Post That API will fail. You would need to again generate the key and pass it to API to make it run.</ins>
+####Please note that the Ticket master API can be used for upto 5000 hits. #####
 
 ***Lighthouse Report***
 
