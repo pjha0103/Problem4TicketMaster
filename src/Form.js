@@ -68,14 +68,14 @@ class postalCodeForm extends Component {
         <Form className="postalCodeSearch">
           <Row form>
             <div className="col-md-6 col-lg-6 col-xs-6 col-sm-6 postalCodeField">
-              <Label for="applicantName">Search Events by PostalCode :</Label>
+              <Label for="postalCode">Search Events by PostalCode :</Label>
               <span className="astrics">*</span>
               <Input
                 maxLength="50"
                 type="text"
                 name="postalCode"
                 placeholder="Enter postal code to search for events"
-                id="name"
+                id="postalCode"
                 value={this.state.postalCode}
                 onChange={e => this.setState({ postalCode: e.target.value })}
               />
@@ -83,12 +83,12 @@ class postalCodeForm extends Component {
             </div>
           </Row>
           <Row form>
-            <div className="col-md-6 col-lg-6 col-xs-6 col-sm-6">
+            <div className="col-md-6 col-lg-6 col-xs-6 col-sm-6">           
               <button
                 type="button"
                 className="btn btn-primary btn-lg searchBtn"
                 disabled={this.state.disableBtn1}
-                onClick={() => this.clickSearchResult()}> Search
+                onClick={() => this.clickSearchResult()}> <Label for="search-btn">Search</Label>
            </button>
             </div>
           </Row>
